@@ -17,6 +17,7 @@ router.get("/notes/:id", (req, res) => {
   if (result) {
     res.json(result);
   }
+  console.log(notes);
   res.send(404);
 });
 
