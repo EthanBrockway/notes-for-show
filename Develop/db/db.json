@@ -1,17 +1,1 @@
-[
-  {
-    "title": "Test Title",
-    "text": "lalala",
-    "id": "0"
-  },
-  {
-    "title": "Test Title",
-    "text": "Test text",
-    "id": "1"
-  },
-  {
-    "title": "Test Title",
-    "text": "Test text",
-    "id": "2"
-  }
-]
+[{"title":"Test Title","text":"lalala","id":"0"},{"title":"Test Title","text":"Test text","id":"1"},{"title":"Test Title","text":"Test text","id":"2"},{"title":"New note","text":"lalala","id":10328},{"title":"dsa","text":"dsa"}]
