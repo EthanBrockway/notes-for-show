@@ -29,7 +29,7 @@ const getNotes = () =>
   fetch("/api/notes", {
     method: "GET",
     headers: {
-      "Content-Type": "application/javascript",
+      "Content-Type": "application/json",
     },
   });
 
@@ -37,16 +37,21 @@ const saveNote = (note) =>
   fetch("/api/notes", {
     method: "POST",
     headers: {
-      "Content-Type": "application/javascript",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(note),
   });
+
+function findById(id, notes) {
+  const result = notes.filter((notes) => notes.id === id)[0];
+  return result;
+}
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: "DELETE",
     headers: {
-      "Content-Type": "application/javascript",
+      "Content-Type": "application/json",
     },
   });
 
