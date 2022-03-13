@@ -42,6 +42,11 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
+function findById(id, notes) {
+  const result = notes.filter((notes) => notes.id === id)[0];
+  return result;
+}
+
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: "DELETE",
